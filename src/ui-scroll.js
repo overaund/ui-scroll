@@ -932,15 +932,15 @@ angular.module('ui.scroll', [])
           }
         }
 
-        function wheelHandler(event) {
-          if(!adapter.disabled) {
+        function wheelHandler() {
+          /*if(!adapter.disabled) {
             let scrollTop = viewport[0].scrollTop;
-            let yMax = viewport[0].scrollHeight - viewport[0].clientHeight;
+            let yMax = viewport[0].scrollHeight - viewport[0].clientHeight;*/
 
-            if ((scrollTop === 0 && !buffer.bof) || (scrollTop === yMax && !buffer.eof)) {
+            /*if ((scrollTop === 0 && !buffer.bof) || (scrollTop === yMax && !buffer.eof)) {
               event.preventDefault();
             }
-          }
+          }*/
         }
       }
     }
